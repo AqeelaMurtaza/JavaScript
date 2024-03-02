@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert,prompt and confirm in javascript</title>
+    <link rel="stylesheet" href="/index.html">
+</head>
+<body>
+    <div>
+        <h1>Hey there! How may i help you?</h1>
+        <p>this is me aqeela murtaza here to help you!!</p>
+    </div>
+    <script>
+        //it give user a pop-up notification on screen with our message, and it does not returm amy thing.
+        alert("wellcome to our page");
+
+        //prompt use when we want to ask any thing from user
+        let name = prompt("what is yor name?" , "fullName")
+        console.log(name);
+
+        //we use confirm to give warning to user that do you really wants to delete this file?
+        let deletePost = confirm("Do you really want to delete this post?");
+        //console.log(deletepost);
+        if(deletePost){
+            //for deleting the post
+            console.log("your post has been deleted sucessfully");
+        }
+        else{
+            //for not deleting the post
+            console.log("your post has not been deleted");
+        }
+
+        //********************taskkkkk*********************
+        let age = prompt("what is your age" , "age")
+        if(age>18){
+            console.log("you are allowed")
+        }
+        else{
+            console.log("you are not allowed")
+        }
+        //diving two strings
+        alert( "8" / "2" )
+        //............if and else statment...............
+       let year = prompt("what is your birth year?");
+       if (year = 2004) {
+        alert ("thats right")
+        alert ("you are so smart")
+       }
+    </script>
+</body>
+</html>
